@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper 3D Coverflow</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0c22;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .slider-container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background: #1b1a3a;
+            width: 300px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .swiper-slide-active {
+            transform: scale(1.1);
+        }
+        .card {
+            text-align: center;
+            padding: 20px;
+        }
+        .card video {
+            width: 100%;
+            border-radius: 10px;
+            background: #444;
+            height: 120px;
+        }
+        .stars i {
+            color: gold;
+            font-size: 14px;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #fff;
+        }
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active {
+            background: #00d4ff;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+
+    <script>
+
+    </script>
+
+</body>
+</html>

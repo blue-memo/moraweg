@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مروج | moraweg</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+   <!-- WowJs -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!-- AOSjs -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <style>
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .slide {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        
+        <div class="btns">
+            <a href="register.html"><button>إنشاء حساب</button></a>
+            <a href="login.html"><button class="login-btn">تسجيل الدخول</button></a>
+        </div>
+    
+        <div class="links">
+            <a href="contact.html">اتصل بنا</a>
+            <a style="color:#52C5CF" href="project.html">أعمالنا</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="courses.html">الكورسات</a>
+        </div>
+    
+        <a href="login.html"><button id="phone-login-btn" class="login-btn">تسجيل الدخول</button></a>
+        <a href="index.html"><img src="logo.webp" alt="logo" class="logo"></a>
+    
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="courses.html">الكورسات</a>
+            <a href="contact.html">اتصل بنا</a>
+            <a style="color:#52C5CF" href="project.html">أعمالنا</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="login.html"><button id="phone-login-btn" style="width:140px;" class="login-btn">تسجيل الدخول</button></a>
+            <a href="register.html"><button style="width:140px">إنشاء حساب</button></a>
+        </div>
+    </header>
+    <br><br>
+    <center>
+    <div data-aos="fade-up" class="blog-landing">
+        <img src="imgs/img-6.webp" alt="mohammed ayman">
+        <h3>د/محمد أيمن</h3>
+        <p>أحد أفضل مدرسي الأحياء للمرحلة الثانوية في مصر، يتابعه أكثر من 2 مليون مشترك على يوتيوب. يقدم محتوى تعليمي متميز على منصته الخاصة بأسلوب مبسط وشيق، مما يساعد الطلاب على تحقيق أعلى الدرجات.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+    </center>
+    <center style="margin-top: 50px;" class="title">
+        <h1 data-aos="fade-up" dir="rtl">أهم التصميمات !</h1>
+    </center>
+    <section align="center" class="blog-designs">
+        <img data-aos="fade-up" src="imgs/m-ayman.webp" alt="design 1"><br>
+        <img data-aos="fade-up" src="imgs/m-ayman-2.webp" alt="design 2">
+    </section>
+    <center>
+        <footer data-aos="fade-up" align="center">
+            <ul class="ul-main">
+            <ul>
+                <li><a href="#">أتصل بنا</a></li>
+                <li><a href="project.html">أعمالنا</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>أحدث الكورسات</h3></li>
+                <li><a href="course.html">كورس التسويق لمعلمي الثانوية</a></li><br>
+                <li><a href="#">كورس التسويق الالكتروني</a></li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>هل لديك استفسار؟ تواصل معنا مباشرة!</h3></li>
+                <li><p>فريقنا متاح للرد على جميع استفساراتك ومساعدتك في اختيار الحلول المناسبة لعملك. لا تتردد في التواصل معنا عبر واتساب!</p></li>
+            
+                <div class="social">
+                <a href="#"><img src="imgs/fb.webp" alt="facebook"></a>
+                <a href="#"><img src="imgs/tl.webp" alt="telegram"></a>
+                <a class="whatsapp" href="#">
+                    <button>
+                        <img src="imgs/wh.webp" alt="whatsapp">
+                        تواصل معنا
+                    </button>
+                </a>
+            </div>
+            </ul>
+            </ul>
+        </footer>
+        </center>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
