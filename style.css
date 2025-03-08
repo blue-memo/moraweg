@@ -947,7 +947,7 @@ aside::-webkit-scrollbar{
     position: relative;
     height: 50px;
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     margin: auto;
     margin-top: 10px;
 }
