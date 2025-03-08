@@ -874,8 +874,6 @@ aside{
     border-radius: 30px;
     backdrop-filter: blur(20px);
     z-index: 99;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 aside::-webkit-scrollbar{
     opacity: 0;
