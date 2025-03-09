@@ -663,28 +663,39 @@ marquee img{
 .contact form input{
     width: 100%;
     max-width: 500px;
-    padding: 7px;
-    height: 55px;
+    padding: 10px 20px 10px 20px;
+    height: 50px;
     border-radius: 30px;
     background: none;
-    text-align: right;
+    text-align: left;
     border: 1px #ffffff9f solid;
+    font-weight: bold;
     margin-top: 10px;
 }
+.contact form input[type="number"]{
+    font-family: sans-serif;
+}
+.contact form input::placeholder{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
 .contact form input::placeholder, .contact form textarea::placeholder{
-    padding: 7px;
     font-size: 18px;
     color: #ffffff86;
-    margin-left: 10px;
+    font-weight: 400;
+    text-align: right;    
+    position: absolute;
+    right: 15px;
 }
 .contact form textarea{
+    padding: 10px 30px 10px 30px;
     width: 100%;
     max-width: 500px;
     height: 150px;
     border-radius: 20px;
     background: none;
-    text-align: right;
-    border: 1px #fff solid;
+    border: 1px #ffffff9f solid;
     margin-top: 10px;
     padding: 10px;
 }
