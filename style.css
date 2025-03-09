@@ -678,6 +678,9 @@ marquee img{
 .contact form input[type="number"]{
     font-family: sans-serif;
 }
+.contact form input[type="number"]::placeholder{
+    font-family: 'GE-Dinar-One';
+}
 .contact form input::placeholder{
     position: absolute;
     top: 50%;
