@@ -164,6 +164,13 @@ header .logo {
 
 
 @media (max-width: 869px) {
+    .guarantee-content h1{
+        font-size: 40px !important;
+    }
+    .guarantee-img{
+        margin: auto;
+        justify-content: space-around;
+    }
     .courses-landing nav{
         font-size: 12px !important;
     }
