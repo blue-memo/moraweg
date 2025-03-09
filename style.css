@@ -167,6 +167,9 @@ header .logo {
     .guarantee-content h1{
         font-size: 40px !important;
     }
+    .guarantee-content p{
+        margin-top: 10px;
+    }
     .guarantee-img{
         margin: auto;
         justify-content: space-around;
