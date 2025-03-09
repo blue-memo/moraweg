@@ -439,7 +439,7 @@ main img{
 }
 
 .slider-container {
-    width: 90%;
+    width: 80%;
     justify-content: center;
     text-align: center;
     margin: auto;
@@ -524,7 +524,6 @@ main img{
 .course-card button{
     width: 100%;
     max-width: 220px;
-    height: 55px;
     border-radius: 20px;
     border: none;
     padding: 7px;
