@@ -893,12 +893,10 @@ aside::-webkit-scrollbar{
     padding: 10px;
     height: 50px;
     width: 100%;
-    max-width: 350px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 18px;
     cursor: pointer;
     direction: rtl;
     border-top: 1px #ffffff07 solid;
@@ -925,7 +923,7 @@ aside::-webkit-scrollbar{
     left: 15px;
 }
 .chapter-title i{
-    font-size: 17px;
+    font-size: 0.90rem;
     margin-right: 10px;
     color: #52C5CF;
 }
