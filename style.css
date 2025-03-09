@@ -884,7 +884,7 @@ footer .social{
 }
 aside{
     padding: 10px;
-    margin-top: 35px;
+    margin-top: 50px;
     height: 100%;
     max-height: 550px;
     background: #0000000c;
@@ -892,6 +892,9 @@ aside{
     backdrop-filter: blur(20px);
     z-index: 99;
     overflow: scroll;
+}
+aside h4{
+    padding: 15px;
 }
 aside::-webkit-scrollbar{
     opacity: 0;
@@ -1324,10 +1327,12 @@ option{
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
+    width: 90%;
 }
 .feature{
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 10px;
     margin: auto;
     text-align: center;
