@@ -16,6 +16,9 @@
     list-style: none;
     outline: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     background: #16133D;
     overflow-x: none;
