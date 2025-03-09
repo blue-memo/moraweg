@@ -439,7 +439,9 @@ main img{
 }
 
 .slider-container {
-    width: 100%;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
     margin: auto;
     overflow: hidden;
 }
@@ -456,6 +458,8 @@ main img{
 .slide {
     flex: 0 0 50%;
     box-sizing: border-box;
+    margin: auto;
+    justify-content: center;
     padding: 50px;
 }
 .prev, .next {
@@ -514,6 +518,8 @@ main img{
     padding-left: 13px;
     max-width: 500px;
     text-align: center;
+    margin: auto;
+    justify-content: center;
 }
 .course-card button{
     width: 100%;
