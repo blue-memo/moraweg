@@ -1855,8 +1855,11 @@ a:hover{
 }
 .profile-container form{
     margin-top: 50px;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
+}
+.profile-container input{
+    width: 100%;
 }
 .profile-container .toggle-password{
     position: absolute;
