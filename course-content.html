@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مروج | moraweg</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+   <!-- WowJs -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!-- AOSjs -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        
+        <div class="btns">
+            <a href="register.html"><button>إنشاء حساب</button></a>
+            <a href="login.html"><button class="login-btn">تسجيل الدخول</button></a>
+        </div>
+    
+        <div class="links">
+            <a href="content-production.html">انتاج المحتوى</a>
+            <a href="project.html">أعمالنا</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="courses.html">الكورسات</a>
+        </div>
+    
+        <a href="login.html"><button id="phone-login-btn" class="login-btn">تسجيل الدخول</button></a>
+        <a href="index.html"><img src="logo.webp" alt="logo" class="logo"></a>
+    
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="courses.html">الكورسات</a>
+            <a href="project.html">أعمالنا</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="content-production.html">انتاج المحتوى</a>
+            <a href="login.html"><button id="phone-login-btn" style="width:140px;" class="login-btn">تسجيل الدخول</button></a>
+            <a href="register.html"><button style="width:140px">إنشاء حساب</button></a>
+        </div>
+    </header>
+    <div class="course-container">
+    <div class="course-main">
+        <video src="" controls></video>
+        <div class="prog"><div></div></div><br>
+        <div class="course-content">
+        <h4>تم مشاهدة 7 فيديو من أصل ٦٨ في هذا الكورس</h4>
+        <p>في عالمٍ تتسارع فيه التطورات التكنولوجية، يصبح التواجد Online ضرورة لا غنى عنها لمواكبة تلك التطورات خاصة في المجال التعليمي.
+            ويُعد التسويق أداة قوية بيد المعلم لتعزيز تواصله مع طلابه، وخلق بيئة تعلمية تفاعلية، وتوسيع نطاق تأثيره. ومن خلال "دبلومة التسويق الرقمي لمعلمي الثانوي" الحصرية على منصة كورسات مروج، فأنت على بعد خطوة واحدة من نجاحك Online.
+            </p><br>
+            <div style="position: relative;">
+            <button align="center">اشترك الأن في الكورس</button>
+            </div>
+
+        </div>
+    </div>
+    <aside id="lesson-list-menu">
+        <h4 align="right">دبلومة التسويق الالكتروني لمعلمي الثانوية</h4>
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow">  المقدمة <span>chapter 1</span></div>
+            <div class="lesson-list">
+                <div class="lesson" onclick="selectLesson(this)" ><i class="fa-solid fa-check"></i><div> مقدمة الكورس</div></div>
+                <div class="lesson" onclick="selectLesson(this)"><i class="fa-solid fa-check"></i><div> أساسيات التسويق الإلكتروني</div></div>
+                <div class="lesson" onclick="selectLesson(this)"><div>ما الذي تحتاجه في الكورس</div></div>
+                <div class="lesson" onclick="selectLesson(this)"><div>كيف تنشئ صفحة على مواقع التواصل</div></div>
+            </div>
+        </div>
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow"> <div>إنتاج المحتوى  <i class="fa-solid fa-lock"></i></div><span>chapter 2</span></div>
+            <div class="lesson-list">
+                <div class="lesson locked">🔒 الدروس مغلقة</div>
+            </div>
+        </div>
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow"> <div>المنصات التعليمية  <i class="fa-solid fa-lock"></i></div><span>chapter 3</span></div>
+            <div class="lesson-list">
+                <div class="lesson locked">🔒 الدروس مغلقة</div>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow"> <div>المساحات التسويقية  <i class="fa-solid fa-lock"></i></div><span>chapter 4</span></div>
+            <div class="lesson-list">
+                <div class="lesson locked">🔒 الدروس مغلقة</div>
+            </div>
+        </div>
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow"> <div>المساحات التسويقية  <i class="fa-solid fa-lock"></i></div><span>chapter 5</span></div>
+            <div class="lesson-list">
+                <div class="lesson locked">🔒 الدروس مغلقة</div>
+            </div>
+        </div>
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow"> <div>تكوين  الفريق  <i class="fa-solid fa-lock"></i></div><span>chapter 6</span></div>
+            <div class="lesson-list">
+                <div class="lesson locked">🔒 الدروس مغلقة</div>
+            </div>
+        </div>
+        <div class="chapter">
+            <div class="chapter-title" onclick="toggleChapter(this)"><img id="arrow" src="imgs/arr.svg" alt="arrow"> <div>كورس مونتاج احترافي <i class="fa-solid fa-lock"></i></div><span>chapter 7</span></div>
+            <div class="lesson-list">
+                <div class="lesson locked">🔒 الدروس مغلقة</div>
+            </div>
+        </div>
+    </div>
+    </aside>
+
+</div>
+    <br><br><br>
+    <center>
+    <footer align="center">
+        <ul class="ul-main">
+        <ul>
+            <li><a href="content-production.html">انتاج المحتوي</a></li><br>
+            <li><a href="project.html">أعمالنا</a></li><br>
+            <li><a href="services.html">خدماتنا</a></li>
+        </ul>
+        <br>
+        <ul>
+            <li><h3>أحدث الكورسات</h3></li>
+            <li><a href="course.html">كورس التسويق لمعلمي الثانوية</a></li><br>
+            <li><a href="#">كورس التسويق الالكتروني</a></li>
+        </ul>
+        <br>
+        <ul>
+            <li><h3>هل لديك استفسار؟ تواصل معنا مباشرة!</h3></li>
+            <li><p>فريقنا متاح للرد على جميع استفساراتك ومساعدتك في اختيار الحلول المناسبة لعملك. لا تتردد في التواصل معنا عبر واتساب!</p></li>
+        
+            <div class="social">
+            <a href="#"><img src="imgs/fb.webp" alt="facebook"></a>
+            <a href="#"><img src="imgs/tl.webp" alt="telegram"></a>
+            <a class="whatsapp" href="#">
+                <button>
+                    تواصل معنا
+                    <img src="imgs/wh.webp" alt="whatsapp">
+                </button>
+            </a>
+        </div>
+        </ul>
+        </ul>
+    </footer>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

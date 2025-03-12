@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مروج | moraweg</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+   <!-- WowJs -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!-- AOSjs -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="header-profile">
+
+            <div onclick="openProfileMenu()" id="profileMenu" class="header-profile-img">
+            <i class="fa-solid fa-bars"></i>
+            <img src="imgs/profile.webp" alt="profile-img">
+            </div>
+
+            <div class="notifaction-i">
+                <a href="notifaction.html">
+                <i class="fa-solid fa-bell"></i>
+                <h3 id="notifaction-num">
+                    <div>
+                        +99
+                    </div>
+                </h3>
+                </a>
+            </div>
+        </div>
+    
+        <div class="links">
+            <a href="content-production.html">انتاج المحتوى</a>
+            <a href="project.html">أعمالنا</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="courses.html">الكورسات</a>
+        </div>
+    
+        <a href="index.html"><img src="logo.webp" alt="logo" class="logo"></a>
+    
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="courses.html">الكورسات</a>
+            <a href="project.html">أعمالنا</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="content-production.html">انتاج المحتوى</a>
+            <a href="#"><button id="phone-login-btn" style="width:140px;background: #ff4141;border-color: #ff4141"">تسجيل الخروج</button></a>
+        </div>
+    </header>
+    <div class="profile-menu">
+        <h3>أهلا محمد المرشدي</h3>
+        <li><a href="profile.html">حسابي</a></li>
+        <li><a href="profile-courses.html">تصفح الكورسات</a></li>
+        <li><a href="#" class="logout">تسجيل الخروج</a></li>
+    </div>
+    <div onclick="openProfileLinks()" id="links-arr" class="links-arr">
+        <i class="fa-solid fa-angles-left"></i>
+    </div>
+    <br>
+
+    <div class="profile-container">
+        <div class="container">
+            <div class="course-card">
+                <div class="card-img">
+                <img src="imgs/course-card.webp" alt="img">
+                </div>
+                <h2>دبلومة التسويق لمعلمي الثانوية</h2>
+                <h3><span>ما يخفيه عنك مشاهير الأونلاين</span></h3>
+                 <a href="#">
+                <button dir="rtl">
+                    استعراض <i class="fa-solid fa-upload"></i>
+                </button>
+               </a>
+            </div>
+            <div class="course-card">
+                <div class="card-img">
+                    <img src="imgs/course-card.webp" alt="img">
+                    </div>
+                <h2>دبلومة التسويق لمعلمي الثانوية</h2>
+                <h3><span>ما يخفيه عنك مشاهير الأونلاين</span></h3>
+                
+                <a href="#">
+                <button dir="rtl">
+                    استعراض <i class="fa-solid fa-upload"></i>
+                </button>
+               </a>
+            </div>
+        </div>
+
+     <div id="profile-links" class="profile-links">
+        <li><a href="profile.html">البيانات الشخصية</a></li>
+        <li><a href="profile-courses.html">كورساتي</a></li>
+        <li><a class="link active" href="#">الشهادات</a></li>
+        <li><a href="change-pass.html"> تغيير كلمة المرور</a></li>
+    </div>
+
+    </div>
+
+    <br><br><br><br>
+    <center>
+        <footer data-aos="fade-ottom" align="center">
+            <ul class="ul-main">
+            <ul>
+                <li><a href="content-production.html">انتاج المحتوي</a></li><br>
+                <li><a href="project.html">أعمالنا</a></li><br>
+                <li><a href="services.html">خدماتنا</a></li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>أحدث الكورسات</h3></li>
+                <li><a href="course.html">كورس التسويق لمعلمي الثانوية</a></li><br>
+                <li><a href="#">كورس التسويق الالكتروني</a></li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>هل لديك استفسار؟ تواصل معنا مباشرة!</h3></li>
+                <li><p>فريقنا متاح للرد على جميع استفساراتك ومساعدتك في اختيار الحلول المناسبة لعملك. لا تتردد في التواصل معنا عبر واتساب!</p></li>
+            
+                <div class="social">
+                <a href="#"><img src="imgs/fb.webp" alt="facebook"></a>
+                <a href="#"><img src="imgs/tl.webp" alt="telegram"></a>
+                <a class="whatsapp" href="#">
+                    <button>
+                        <img src="imgs/wh.webp" alt="whatsapp">
+                        تواصل معنا
+                    </button>
+                </a>
+            </div>
+            </ul>
+            </ul>
+        </footer>
+        </center>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+    </html>
