@@ -83,9 +83,8 @@
          <h1>أحدث الكورسات</h1>
          <p>تعلم التسويق الإلكتروني من روّاد المجال!</p>
         </div>
-    
         <div class="slider-container">
-            <div class="prev">
+            <div id="prev">
                 <div>
                 <img onclick="moveSlide(-1)" src="imgs/left-arrow.webp" alt="arrow" width="300px">
                 </div>
@@ -140,7 +139,7 @@
             </div>
         </div>
         </div>
-        <div class="next">
+        <div id="next">
             <div>
             <img onclick="moveSlide(1)" src="imgs/right-arrow.webp" alt="arrow" width="300px">
             </div>
@@ -204,73 +203,93 @@
             </div>
         </div>
     </section>
-    
+    <br><br><br>
 
-
-<center>
     <center data-aos="fade-up" class="title">
         <h1>! شراكات ناجحة.. نتائج مذهلة </h1>
         <p>قصص النجاح والتجارب السابقة</p>
     </center>
-    <section data-aos="fade-up" class="sec-3">
-        <div class="carousel-wrapper">
-            <div class="carousel-track">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <video src="video1.mp4" controls></video>
-                        <h3>د/ حمدي السيد</h3>
-                        <p class="position">المدير التنفيذي لشركة تسلا</p>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+    <section class="sec-3" data-aos="fade-up">
+    <div class="carousel-wrapper">
+        <div class="carousel-track">
+            <div class="carousel-item">
+                <div class="video-box">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v1XK6uB_R2U?start=1322" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="carousel-item next">
-                    <div class="card">
-                        <video src="video2.mp4" controls></video>
-                        <h3>د/ حمدي السيد</h3>
-                        <p class="position">المدير التنفيذي لشركة تسلا</p>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item prev">
-                    <div class="card">
-                        <video src="video3.mp4" controls></video>
-                        <h3>د/ حمدي السيد</h3>
-                        <p class="position">المدير التنفيذي لشركة تسلا</p>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+                <h3>م/ محمد المرشدي</h3>
+                <p>المدير التنفيذي لشركة نسما</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-            <div class="carousel-controls">
-                <div class="control-btn" onclick="moveSlide(-1)">❮</div>
-                <div class="indicator-dots">
-                    <div class="indicator-dot active"></div>
-                    <div class="indicator-dot"></div>
-                    <div class="indicator-dot"></div>
+            <div class="carousel-item">
+                <div class="video-box">
+                    <iframe src="" frameborder="0"></iframe>
                 </div>
-                <div class="control-btn" onclick="moveSlide(1)">❯</div>
+                <h3>م/ محمد المرشدي</h3>
+                <p>مؤسس شركة XYZ</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="video-box">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <h3>م/ محمد المرشدي</h3>
+                <p>مؤسس شركة XYZ</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="video-box">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <h3>م/ محمد المرشدي</h3>
+                <p>خبير تسويق رقمي</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="video-box">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <h3>م/ محمد المرشدي</h3>
+                <p>مدير عمليات شركة ABC</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
             </div>
         </div>
+        <div class="carousel-controls">
+            <div class="control-btn" onclick="moveSlide(-1)">❮</div>
+            <div class="indicator-dots"></div>
+            <div class="control-btn" onclick="moveSlide(1)">❯</div>
+        </div>
+    </div>
     </section>
-    
-</center>
     <center style="margin-top: 150px;" data-aos="fade-up" class="title">
         <h1>مُروج بالأرقام!</h1>
         <p style="direction: rtl;">أرقام تروي قصة نجاحنا! 🚀</p>
