@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const slider = container.querySelector(".slider");
         const slides = container.querySelectorAll(".slide");
         const totalSlides = slides.length;
-        const nextBtn = container.querySelector(".next");
-        const prevBtn = container.querySelector(".prev");
+        const nextBtn = container.querySelector("#next");
+        const prevBtn = container.querySelector("#prev");
 
        
         function getSlidesPerStep() {
@@ -142,55 +142,71 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("فشل تحميل قائمة الدول", error));
 });
+
 // 3d Slider
 let items = document.querySelectorAll('.carousel-item');
-let dots = document.querySelectorAll('.indicator-dot');
+let dotsContainer = document.querySelector('.indicator-dots');
+let positions = [];
 let currentIndex = 1;
-let isTransitioning = false;
+let autoSlideInterval;
 
-function updateDots() {
-    dots.forEach((dot, index) => {
+function setupCarousel() {
+    dotsContainer.innerHTML = "";
+    positions = Array(items.length).fill("hidden");
+
+    if (items.length >= 3) {
+        positions[0] = "prev";
+        positions[1] = "active";
+        positions[2] = "next";
+    }
+
+    items.forEach(() => {
+        const dot = document.createElement("div");
+        dot.classList.add("indicator-dot");
+        dotsContainer.appendChild(dot);
+    });
+
+    updateCarousel();
+    restartAutoSlide();
+}
+
+function updateCarousel() {
+    items.forEach((item, index) => {
+        item.className = `carousel-item ${positions[index] || "hidden"}`;
+    });
+
+    document.querySelectorAll('.indicator-dot').forEach((dot, index) => {
         dot.classList.toggle('active', index === currentIndex);
     });
 }
 
 function moveSlide(direction) {
-    if (isTransitioning) return;
-    isTransitioning = true;
-
     if (direction === 1) {
+        positions.unshift(positions.pop());
         currentIndex = (currentIndex + 1) % items.length;
     } else {
+        positions.push(positions.shift());
         currentIndex = (currentIndex - 1 + items.length) % items.length;
     }
 
-    items.forEach((item, index) => {
-        item.classList.remove('prev', 'active', 'next');
-    });
-
-    let prevIndex = (currentIndex - 1 + items.length) % items.length;
-    let nextIndex = (currentIndex + 1) % items.length;
-
-    items[prevIndex].classList.add('prev');
-    items[currentIndex].classList.add('active');
-    items[nextIndex].classList.add('next');
-
-    let activeVideo = items[currentIndex].querySelector("video");
-    activeVideo.play();
-    items.forEach((item, idx) => {
-        if (idx !== currentIndex) {
-            let video = item.querySelector("video");
-            video.pause();
-        }
-    });
-
-    updateDots();
-    setTimeout(() => isTransitioning = false, 700);
+    updateCarousel();
+    restartAutoSlide();
 }
 
-setInterval(() => moveSlide(1), 4000);tor('.control-btn:first-child').addEventListener('click', () => moveSlide(-1));
-document.querySelector('.control-btn:last-child').addEventListener('click', () => moveSlide(1));
+function restartAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(() => moveSlide(1), 3000);
+}
 
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        clearInterval(autoSlideInterval);
+    } else {
+        restartAutoSlide();
+    }
+});
+
+setupCarousel();
 
 // Notifaction
 document.getElementById("markAllRead").addEventListener("click", function() {
