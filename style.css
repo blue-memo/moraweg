@@ -546,8 +546,8 @@ main img{
 }
 
 .indicator-dot {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border: 2px #fff solid;
     margin-top: 70px;
     border-radius: 50%;
