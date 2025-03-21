@@ -154,7 +154,7 @@ function setupCarousel() {
     dotsContainer.innerHTML = "";
     positions = Array(items.length).fill("hidden");
 
-    if (items.length >= 3) {
+    if (items.length >= 2) {
         positions[0] = "prev";
         positions[1] = "active";
         positions[2] = "next";
