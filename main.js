@@ -195,7 +195,7 @@ function moveSlide(direction) {
 
 function restartAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(() => moveSlide(1), 3000);
+    autoSlideInterval = setInterval(() => moveSlide(1), 10000);
 }
 
 document.addEventListener("visibilitychange", () => {
