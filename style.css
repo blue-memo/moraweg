@@ -1792,7 +1792,7 @@ option{
     left: 7%;
     text-align: right;
     background: var(--Indigo-11, #16133D);
-    z-index: 99999999999999999999999;
+    z-index: 999;
     padding: 15px;
     box-shadow: 0px 0px 50px #00D7FF21;
     border: 1px #ffffff05 solid;
