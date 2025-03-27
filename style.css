@@ -67,6 +67,7 @@ header {
     backdrop-filter: blur(9px);
     border-radius: 30px;
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     box-shadow: 0px 0px 30px #00000013;
 }
@@ -142,7 +143,7 @@ header .links {
 }
 
 header .links a {
-    font-size: 1.5vw;
+    font-size: 22px;
 }
 header a:hover{
     color: #52C5CF;
@@ -256,7 +257,11 @@ header .logo {
         width: 90px !important;
     }
 }
+
 @media (max-width: 960px){
+    #phone-login-btn {
+        display: block;
+    }
     .profile-container{
         flex-direction: column;
     }
@@ -314,10 +319,6 @@ header .logo {
         font-size: 60px !important;
     }
 
-    #phone-login-btn {
-        display: block;
-    }
-
     @keyframes slideIn {
         from {
             transform: translateX(100%);
@@ -345,9 +346,6 @@ header .logo {
         display: none;
     }
 
-    #phone-login-btn {
-        display: none;
-    }
 }
 
 /*== Header & Menu Box End ==*/
@@ -357,9 +355,11 @@ header .logo {
 main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: auto;
     padding: 20px;
     width: 90%;
+    max-width: 1200px;
     margin-bottom: 20px;
     direction: rtl;
     position: relative;
@@ -375,18 +375,24 @@ main .btns{
 }
 main h1 {
     font-size: 70px;
-    line-height: 1.2;
     text-align: right;
+}
+main h1 span{
+    margin-right: 10px;
 }
 
 main p {
     font-size: 18px;
     margin-top: 10px;
-    max-width: 450px;
+    max-width: 500px;
     line-height: 1.6;
     text-align: right;
 }
-
+@media(max-width:1331px){
+    main h1{
+        font-size: 55px;
+    }
+}
 @media (min-width: 870px) {
     main {
         gap: 50px; 
@@ -443,7 +449,7 @@ main img{
 
 .sec-3 {
     text-align: center;
-    margin-top: -100px;
+    margin-top: -80px;
 }
 
 .carousel-wrapper {
@@ -468,10 +474,10 @@ main img{
 .carousel-item {
     width: 100%;
     max-width: 350px;
-    height: 270px;
+    height: 300px;
     background: #1A1B3A;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -484,7 +490,7 @@ main img{
 
 .video-box {
     width: 100%;
-    height: 120px;
+    height: 170px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -498,6 +504,7 @@ main img{
     border-radius: 10px;
     background: #cecece;
 }
+
 
 .carousel-item h3 {
     color: white;
@@ -514,7 +521,7 @@ main img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 280px;
+    margin-top: 330px;
     position: absolute;
     width: 100%;
 }
@@ -546,8 +553,8 @@ main img{
 }
 
 .indicator-dot {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border: 2px #fff solid;
     margin-top: 70px;
     border-radius: 50%;
@@ -709,13 +716,18 @@ main img{
     margin: auto;
 }
 .slide-track {
+    display: flex;
+    width: calc(200px * 20);
+    animation: scroll 8s linear infinite;
+}
+.bottom-slide-track{
     margin-top: 10px;
     display: flex;
     width: calc(200px * 20);
-    animation: scroll 10s linear infinite;
+    animation: scrollR 8s linear infinite;
 }
 
-.slide-track img {
+.slide-track img, .bottom-slide-track img {
     background: #001227;
     width: 150px;
     height: 150px;
@@ -729,12 +741,12 @@ main img{
     100% { transform: translateX(-50%); }
 }
 
-marquee img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
+@keyframes scrollR {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
 }
+
+
 
 /*== Clients End ==*/
 .sec-3 .stars{
@@ -774,6 +786,8 @@ marquee img{
     justify-content: space-around;
     margin: auto;
     margin-top: 60px;
+    width: 90%;
+    padding: 10px;
 }
 .btn{
     background: none;
@@ -790,16 +804,24 @@ marquee img{
     align-items: center;
     text-align: center;
     margin-top: 10px;
-    width: 150px;
+    width: 250px;
+    position: relative;
     filter: drop-shadow(0px 0px 30px #ffffff3a);
 }
+.numbers .num:hover{
+    transform: scale(0.9);
+    filter: drop-shadow(0px 0px 50px #00c3ff77);
+}
 .numbers img{
-    width: 80px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .numbers .num h2{
     font-family: sans-serif;
-    font-size: 60px;
-    padding: 15px;
+    font-size: 90px;
+    margin-top: 100px;
 }
 /*== Contact ==*/
 .contact form{
@@ -1198,15 +1220,20 @@ aside::-webkit-scrollbar{
     justify-content: center;
     direction: ltr;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     padding: 20px;
 }
-
-.login-container h1 {
-    font-size: 60px;
-    text-align: center;
+.login-title{
+    right: 0px;
 }
-
+.login-container h1 {
+    font-size: 50px;
+    right: 0;
+}
+.login-container h4{
+    text-align: right ;
+    right: 0;
+}
 .input-group {
     display: flex;
     align-items: center;
@@ -1242,12 +1269,13 @@ aside::-webkit-scrollbar{
 }
 
 .login-container form {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
     width: 100%;
     max-width: 500px;
-    text-align: center;
+    text-align: right;
 }
 
 .login-container form button {
@@ -1286,7 +1314,7 @@ aside::-webkit-scrollbar{
 @media (max-width: 768px) {
     .login-container {
         flex-direction: column;
-        text-align: center;
+        text-align: right;
     }
     .slider-container{
         width: 100% !important;
@@ -1299,14 +1327,6 @@ aside::-webkit-scrollbar{
     }
     .input-group input {
         font-size: 0.9rem;
-    }
-
-    .login-container h1 {
-        font-size: 2rem;
-    }
-
-    .login-container h4 {
-        text-align: right;
     }
 
     .login-container a {
@@ -1466,8 +1486,11 @@ option{
     width: 100%;
     margin-top: 30px;
 }
-.course-info video{
-    width: 100%;
+.course-info iframe{
+    border-radius: 10px;
+    width: 95%;
+    height: 100vh;
+    max-height: 500px;
     max-width: 800px;
 }
 .course-info .info{
@@ -1502,30 +1525,23 @@ option{
     margin-top: 30px;
     height: 300px;
 }
-.features center{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
-    width: 90%;
-}
 .feature{
     display: flex;
     align-items: center;
     width: 100%;
     gap: 10px;
     margin: auto;
+    justify-content: center;
     text-align: center;
 }
 .feature h3{
+    border: 1px #ffffff05 solid;
     background: linear-gradient(117.54deg, rgba(255, 255, 255, 0.1) -19.85%, rgba(235, 235, 235, 0.0734707) 4.2%, rgba(224, 224, 224, 0.0575009) 13.88%, rgba(212, 212, 212, 0.0422621) 27.98%, rgba(207, 207, 207, 0.0351168) 37.8%, rgba(202, 202, 202, 0.0286863) 44.38%, rgba(200, 200, 200, 0.0252599) 50.54%, rgba(196, 196, 196, 0.02) 60.21%);
-    border: 1px solid;
-    border-image-source: linear-gradient(131.92deg, rgba(255, 255, 255, 0.2) 14.14%, rgba(0, 0, 0, 0) 47.67%, rgba(255, 255, 255, 0.2) 82.63%);    
     padding: 15px;
     margin-top: 10px;
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
-    border: 1px #ffffff28;
 }
 .feature i{
     font-size: 25px;
@@ -1533,6 +1549,7 @@ option{
 .clients-rates{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -1544,6 +1561,7 @@ option{
     direction: rtl;
     padding: 15px;
     border-radius: 10px;
+    border: 1px #ffffff04 solid;
     background: linear-gradient(117.54deg, rgba(255, 255, 255, 0.1) -19.85%, rgba(235, 235, 235, 0.0734707) 4.2%, rgba(224, 224, 224, 0.0575009) 13.88%, rgba(212, 212, 212, 0.0422621) 27.98%, rgba(207, 207, 207, 0.0351168) 37.8%, rgba(202, 202, 202, 0.0286863) 44.38%, rgba(200, 200, 200, 0.0252599) 50.54%, rgba(196, 196, 196, 0.02) 60.21%);
 }
 .client-rate img{
@@ -1576,7 +1594,7 @@ option{
     text-align: right;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 90%;
     gap: 50px;
     flex-wrap: wrap;
@@ -1611,12 +1629,13 @@ option{
     font-family: sans-serif;
 }
 .guarantee-content h1{
-    font-size: 70px;
+    font-size: 60px;
 }
 .guarantee-content p{
     width: 100%;
-    max-width: 550px;
-    font-size: 20px;
+    max-width: 600px;
+    direction: rtl;
+    font-size: 19px;
 }
 @keyframes guarantee{
     10%{
@@ -1881,11 +1900,11 @@ a:hover{
 .profile-container input{
     width: 100%;
 }
-.profile-container .toggle-password{
+.toggle-password{
     position: absolute;
     left: 10px;
-    border: none;
-    color: #fff;
+    border: none !important;
+    color: #fff !important;
     width: 20px;
 }
 .profile-container .input-group label{
