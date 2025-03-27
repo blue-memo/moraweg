@@ -64,15 +64,19 @@
 
 <div class="login-container">
     <form dir="ltr" action="#">
-        <h1>قم بتسجيل الدخول</h1>
-        <h4>احرص على ادخال بياناتك بشكل صحيح</h4><br>
+        <div class="login-title">
+        <h1 align="right">قم بتسجيل الدخول</h1>
+        <h4 align="right">احرص على ادخال بياناتك بشكل صحيح</h4><br>
+        </div>
         <div class="input-group">
         <i class="fa-solid fa-envelope"></i>
         <input type="text" placeholder=" البريد الالكتروني" name="email">
         </div><br>
         <div class="input-group">
-            <i class="fa-solid fa-key"></i>
+        <i class="fa-solid fa-key"></i>
         <input type="password" placeholder=" كلمة السر" name="password">
+        
+        <i class="fa-solid fa-eye toggle-password"></i>
         </div>
         <a href="#">هل نسيت كلمة السر؟</a>
         <button>تسجيل الدخول</button><br><br>
@@ -119,5 +123,26 @@
         </center>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <script src="main.js"></script>
+                <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const toggleIcons = document.querySelectorAll(".toggle-password");
+            
+                toggleIcons.forEach(icon => {
+                    icon.addEventListener("click", function () {
+                        let passwordField = this.previousElementSibling;
+            
+                        if (passwordField.type === "password") {
+                            passwordField.type = "text";
+                            this.classList.remove("fa-eye");
+                            this.classList.add("fa-eye-slash");
+                        } else {
+                            passwordField.type = "password";
+                            this.classList.remove("fa-eye-slash");
+                            this.classList.add("fa-eye");
+                        }
+                    });
+                });
+            });
+            </script>
     </body>
     </html>
