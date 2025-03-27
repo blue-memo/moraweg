@@ -237,9 +237,9 @@ function openProfileLinks() {
 function openProfileMenu() {
     const profileMenu = document.querySelector('.profile-menu');
 
-    if (profileMenu.style.left === "50px") {
-        profileMenu.style.left = "-2000px";
+    if (profileMenu.style.top === "120px") {
+        profileMenu.style.top = "-2000px";
     } else {
-        profileMenu.style.left = "50px";
+        profileMenu.style.top = "120px";
     }
 }
