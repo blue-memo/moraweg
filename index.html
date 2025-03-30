@@ -1,371 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مروج | moraweg</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-
-   <!-- WowJs -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-   <!-- AOSjs -->
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-   <!-- Swiper CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-
-   <!-- Swiper JS -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-</head>
-<body>
-    <header class="animate__animated animate__fadeInDown">
-        
-        <div class="btns">
-            <a href="register.html"><button>إنشاء حساب</button></a>
-            <a href="login.html"><button class="login-btn">تسجيل الدخول</button></a>
-        </div>
-    
-        <div class="links">
-            <a href="content-production.html">انتاج المحتوى</a>
-            <a href="project.html">أعمالنا</a>
-            <a href="services.html">خدماتنا</a>
-            <a href="courses.html">الكورسات</a>
-        </div>
-    
-        <a href="login.html"><button id="phone-login-btn" class="login-btn">تسجيل الدخول</button></a>
-        <a href="#"><img src="logo.webp" alt="logo" class="logo"></a>
-    
-        <div class="menu-icon" id="menu-icon">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        
-        <div class="mobile-menu" id="mobile-menu">
-            <a href="courses.html">الكورسات</a>
-            <a href="project.html">أعمالنا</a>
-            <a href="services.html">خدماتنا</a>
-            <a href="content-production.html">انتاج المحتوى</a>
-            <a href="login.html"><button id="phone-login-btn" style="width:140px;" class="login-btn">تسجيل الدخول</button></a>
-            <a href="register.html"><button style="width:140px">إنشاء حساب</button></a>
-        </div>
-    </header>
-
-        <div class="ill">
-    <main>
-        <div class="animate__animated animate__backInDown" align="center" class="landing-content">
-        <h1>معنا تتحول أحلامك</h1>
-        <h1 style="color:#52C5CF">الى قصة نجاح!</h1>
-        <p>مروج، من أكبر شركات التسويق الإلكتروني في مصر والشرق الأوسط، بخبرة تتجاوز 10 سنوات، وأكثر من 1000 عميل، وميزانيات إعلانية تتخطى 2 مليون دولار. معنا، يتحول الإبداع إلى نتائج ملموسة!</p>
-        <br>
-        <div class="btns">
-         <a href="#courses"><button style="background-color: #52C5CF;">أحدث الكورسات</button></a>
-         <a href="login.html"><button>تسجيل الدخول</button></a>
-         </div>
-        </div>
-
-        <div class="animate__animated animate__fadeInLeft" class="ill">
-            <img src="imgs/home-ill.webp" class="animated-img" alt="image">
-        </div>
-    </main>
-
-    <section data-aos="fade-up">
-        <div id="courses" align="center" class="title">
-         <h1>أحدث الكورسات</h1>
-         <p>تعلم التسويق الإلكتروني من روّاد المجال!</p>
-        </div>
-        <div class="slider-container">
-            <div id="prev">
-                <div>
-                <img onclick="moveSlide(-1)" src="imgs/left-arrow.webp" alt="arrow" width="300px">
-                </div>
-                </div> 
-            <div class="slider-content">
-            <div class="sliders">
-            <div class="slider">
-                <div class="slide">
-                    <div class="course-card">
-                        <div class="card-img">
-                            <h4>مجاناً</h4>
-                            <img src="imgs/course-card.webp" alt="img">
-                            </div>
-                        <h2>دبلومة التسويق لمعلمي الثانوية</h2>
-                        <h3><span>ما يخفيه عنك مشاهير الأونلاين</span></h3>
-                        <a href="course.html"><button>تصفح الكورس</button></a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <a href="#">
-                        <div class="course-card">
-                            <div class="card-img">
-                                <h4>خصم %70</h4>
-                                <img src="imgs/course-card.webp" alt="img">
-                                </div>
-                            <h2>دبلومة التسويق لمعلمي الثانوية</h2>
-                            <h3><span>ما يخفيه عنك مشاهير الأونلاين</span></h3>
-                            <a href="course.html"><button>تصفح الكورس</button></a>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="#">
-                        <div class="course-card">
-                            <img src="imgs/course-card.webp" alt="img">
-                            <h2>دبلومة التسويق لمعلمي الثانوية</h2>
-                            <h3><span>ما يخفيه عنك مشاهير الأونلاين</span></h3>
-                            <a href="course.html"><button>تصفح الكورس</button></a>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="#">
-                        <div class="course-card">
-                            <img src="imgs/course-card.webp" alt="img">
-                            <h2>دبلومة التسويق لمعلمي الثانوية</h2>
-                            <h3><span>ما يخفيه عنك مشاهير الأونلاين</span></h3>
-                            <a href="course.html"><button>تصفح الكورس</button></a>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div id="next">
-            <div>
-            <img onclick="moveSlide(1)" src="imgs/right-arrow.webp" alt="arrow" width="300px">
-            </div>
-            </div>
-        </div>
-        </section>
-
-    <div data-aos="fade-up" align="center" class="title">
-        <h1>عملاؤنا المميزون</h1>
-        <p>! شركاء النجاح الذين وثقوا بنا </p>
-    </div>
-    <br>
-    <section class="clients">
-        <div class="slider">
-            <div class="slide-track">
-                <img src="imgs/img-1.webp" alt="client">
-                <img src="imgs/img-2.webp" alt="client">
-                <img src="imgs/img-3.webp" alt="client">
-                <img src="imgs/img-4.webp" alt="client">
-                <img src="imgs/img-5.webp" alt="client">
-                <img src="imgs/img-6.webp" alt="client">
-                <img src="imgs/img-7.webp" alt="client">
-                <img src="imgs/img-8.webp" alt="client">
-                <img src="imgs/img-9.webp" alt="client">
-                <img src="imgs/img-10.webp" alt="client">
-                <img src="imgs/img-1.webp" alt="client">
-                <img src="imgs/img-2.webp" alt="client">
-                <img src="imgs/img-3.webp" alt="client">
-                <img src="imgs/img-4.webp" alt="client">
-                <img src="imgs/img-5.webp" alt="client">
-                <img src="imgs/img-6.webp" alt="client">
-                <img src="imgs/img-7.webp" alt="client">
-                <img src="imgs/img-8.webp" alt="client">
-                <img src="imgs/img-9.webp" alt="client">
-                <img src="imgs/img-10.webp" alt="client">
-                </div>
-                </div>
-                
-                <div class="slider">
-                <div class="bottom-slide-track">
-                <img src="imgs/img-11.webp" alt="client">
-                <img src="imgs/img-12.webp" alt="client">
-                <img src="imgs/img-13.webp" alt="client">
-                <img src="imgs/img-14.webp" alt="client">
-                <img src="imgs/img-15.webp" alt="client">
-                <img src="imgs/img-16.webp" alt="client">
-                <img src="imgs/img-17.webp" alt="client">
-                <img src="imgs/img-18.webp" alt="client">
-                <img src="imgs/img-19.webp" alt="client">
-                <img src="imgs/img-20.webp" alt="client">
-                <img src="imgs/img-11.webp" alt="client">
-                <img src="imgs/img-12.webp" alt="client">
-                <img src="imgs/img-13.webp" alt="client">
-                <img src="imgs/img-14.webp" alt="client">
-                <img src="imgs/img-15.webp" alt="client">
-                <img src="imgs/img-16.webp" alt="client">
-                <img src="imgs/img-17.webp" alt="client">
-                <img src="imgs/img-18.webp" alt="client">
-                <img src="imgs/img-19.webp" alt="client">
-                <img src="imgs/img-20.webp" alt="client">
-                </div>
-            </div>
-        </div>
-    </section>
-    <br><br><br>
-
-    <center data-aos="fade-up" class="title">
-        <h1>! شراكات ناجحة.. نتائج مذهلة </h1>
-        <p>قصص النجاح والتجارب السابقة</p>
-    </center>
-    <section class="sec-3" data-aos="fade-up">
-    <div class="carousel-wrapper">
-        <div class="carousel-track">
-            <div class="carousel-item">
-                <div class="video-box">
-                    <iframe width="560" height="315" src="https://iframe.mediadelivery.net/embed/244898/9a2c9264-9860-447d-b35c-bd14186e44b6" frameborder="0" referrerpolicy="no-referrer"  allow="ncrypted-media"  allowfullscreen></iframe>                
-                </div>
-                <h3>م/ محمد المرشدي</h3>
-                <p>المدير التنفيذي لشركة نسما</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="video-box">
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-                <h3>م/ محمد المرشدي</h3>
-                <p>مؤسس شركة XYZ</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="video-box">
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-                <h3>م/ محمد المرشدي</h3>
-                <p>مؤسس شركة XYZ</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="video-box">
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-                <h3>م/ محمد المرشدي</h3>
-                <p>خبير تسويق رقمي</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="video-box">
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-                <h3>م/ محمد المرشدي</h3>
-                <p>مدير عمليات شركة ABC</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-controls">
-            <div class="control-btn" onclick="moveSlide(-1)">❮</div>
-            <div class="indicator-dots"></div>
-            <div class="control-btn" onclick="moveSlide(1)">❯</div>
-        </div>
-    </div>
-    </section>
-    <center style="margin-top: 150px;" data-aos="fade-up" class="title">
-        <h1>مُروج بالأرقام!</h1>
-        <p style="direction: rtl;">أرقام تروي قصة نجاحنا! 🚀</p>
-    </center>
-
-    <section align="center" data-aos="fade-up">
-        <div class="numbers">
-        <div align="center" class="num">
-            <img src="imgs/🚀.webp" alt="img">
-            <h2>+0</h3>
-            <p><span>أكثر من 10 سنوات خبرة</span></p>
-        </div>
-        <div class="num">
-            <img src="imgs/💼.webp" alt="img">
-            <h2>+0</h2>
-            <p><span>أكثر من 700 عميل وثقوا بنا</span></p>
-        </div>
-        <div class="num">
-            <img src="imgs/💰.webp" alt="img">
-            <h2>+0M</h2>
-            <p><span>أكثر من 10 مليون جنيه حملات اعلانية في مختلف المنصات</span></p>
-        </div>
-        </div>
-        <br><br>
-        <button class="btn">أنضم الي عملائنا الناجحين الأن !</button>
-    </section>
-    <br><br><br><br>
-    <center data-aos="fade-up" class="title">
-        <h1>أطلب عرض سعر الآن</h1>
-        <p>جاهز للارتقاء بأعمالك؟ احصل على عرض سعر مخصص!</p>
-    </center>
-    <section data-aos="fade-up" align="center" class="contact">
-        <form method="" action="">
-        <input type="text" placeholder="الاسم"><br>
-        <input type="number" placeholder="رقم الهاتف"><br>
-        <textarea placeholder="رسالتك"></textarea><br>
-        <button type="submit">ارسال الطلب</button>
-        </form>
-    </section>
-
-    <center>
-    <footer data-aos="fade-up" align="center">
-        <ul class="ul-main">
-        <ul>
-            <li><a href="content-production.html">انتاج المحتوي</a></li><br>
-            <li><a href="project.html">أعمالنا</a></li>
-            <li><a href="services.html">خدماتنا</a></li>
-        </ul>
-        <br>
-        <ul>
-            <li><h3>أحدث الكورسات</h3></li>
-            <li><a href="course.html">كورس التسويق لمعلمي الثانوية</a></li>
-            <li><a href="#">كورس التسويق الالكتروني</a></li>
-        </ul>
-        <br>
-        <ul>
-            <li><h3>هل لديك استفسار؟ تواصل معنا مباشرة!</h3></li>
-            <li><p>فريقنا متاح للرد على جميع استفساراتك ومساعدتك في اختيار الحلول المناسبة لعملك. لا تتردد في التواصل معنا عبر واتساب!</p></li>
-        
-            <div class="social">
-            <a href="#"><img src="imgs/fb.webp" alt="facebook"></a>
-            <a href="#"><img src="imgs/tl.webp" alt="telegram"></a>
-            <a class="whatsapp" href="#">
-                <button>
-                    تواصل معنا
-                    <img src="imgs/wh.webp" alt="whatsapp">
-                </button>
-            </a>
-        </div>
-        </ul>
-        </ul>
-    </footer>
-    </center>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="main.js"></script>
-</body>
-</html>
