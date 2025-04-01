@@ -401,7 +401,6 @@ main p {
     .landing-content h1 {
         font-size: 80px;
     }
-
 }
 
 main img{
@@ -473,8 +472,8 @@ main img{
 
 .carousel-item {
     width: 100%;
-    max-width: 400px;
-    height: 350px;
+    max-width: 350px;
+    height: 300px;
     background: #1A1B3A;
     border-radius: 15px;
     padding: 10px;
@@ -500,7 +499,7 @@ main img{
 
 .video-box iframe {
     width: 100%;
-    height: 100%;
+    height: 90%;
     border-radius: 10px;
     background: #cecece;
 }
@@ -592,16 +591,19 @@ main img{
 
 
 .slider-container {
-    width: 75%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.slider-content{
+    width: 90%;
     justify-content: center;
     text-align: center;
     margin: auto;
+    max-width: 1300px;
     overflow: hidden;
-}
-.slider-content{
-    position: relative;
-    margin: auto;
-    width:100%;
+    margin-top: 20px;
+    padding: 10px;
 }
 .slider {
     display: flex;
@@ -613,7 +615,6 @@ main img{
     box-sizing: border-box;
     margin: auto;
     justify-content: center;
-    padding: 50px;
 }
 #prev, #next {
     border-radius: 52px;
@@ -644,16 +645,16 @@ main img{
     z-index: 99999999999999999;
 }
 #prev {
-    left: 30px;
-    box-shadow: 0px 0px 50px #ffffff1a;
+    left: 10px;
+    box-shadow: 0px 0px 20px #ffffff1a;
     z-index: 99999999999999999;
     position: absolute;
 }
 
 #next {
-    box-shadow: 0px 0px 50px #ffffff1a;
+    box-shadow: 0px 0px 20px #ffffff1a;
     z-index: 99999999999999999;
-    right: 40px;
+    right: 10px;
     position: absolute;
 }
 
@@ -706,8 +707,11 @@ main img{
 
 /*== Courses End ==*/
 /*== Clients Start ==*/
+/*== Clients Start ==*/
 .clients, .bottom-clients{
     width: 100%;
+    max-width: 1500px;
+    margin: auto;
     height: var(--height);
     overflow: hidden;
     mask-image: linear-gradient(
@@ -774,6 +778,8 @@ main img{
         left: 100%;
     }
 }
+
+
 
 /*== Clients End ==*/
 .sec-3 .stars{
@@ -1031,7 +1037,7 @@ footer .social{
     padding: 10px;
     margin-top: 20px;
 }
-.course-main video{
+.course-main iframe{
     border-radius: 20px;
     width: 100%;
     max-width: 600px;
@@ -1346,12 +1352,6 @@ aside::-webkit-scrollbar{
     .slider-container{
         width: 100% !important;
     }
-    .prev{
-        left: 10px !important;
-    }
-    .next{
-        right: 10px !important;
-    }
     .input-group input {
         font-size: 0.9rem;
     }
@@ -1404,17 +1404,19 @@ option{
 
 /*===== services page =====*/
 .services-landing-content{
-    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: auto;
+    justify-content: center;
     padding: 20px;
     width: 90%;
+    max-width: 1200px;
     margin-bottom: 20px;
     direction: rtl;
     position: relative;
     gap: 20px;
 }
+
 .services-landing-content p{
     width: 100%;
     max-width: 450px;
@@ -1728,10 +1730,13 @@ option{
     border: 2px solid;
     border-image-source: linear-gradient(131.92deg, rgba(255, 255, 255, 0.2) 14.14%, rgba(0, 0, 0, 0) 47.67%, rgba(255, 255, 255, 0.2) 82.63%);
     width: 100%;
-    max-width: 300px;
+    max-width: 370px;
     text-align: center;
     margin: auto;
     justify-content: center;
+}
+.project-card:hover{
+    transform: translateY(-10px);
 }
 .project-card img{
     width: 100%;
