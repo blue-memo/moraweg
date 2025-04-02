@@ -590,7 +590,9 @@ main img{
 }
 
 
-.slider-container {
+.slider-container {    
+    overflow: hidden;
+    position: relative;
     max-width: 1500px;
     margin: auto;
 }
