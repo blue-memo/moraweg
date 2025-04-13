@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مروج | moraweg</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -27,60 +27,55 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <style>
+     .slider-container {
 
-.slider-container {
-    width: 100%;
+    width:100%;
+
+    justify-content: center;
+
+    text-align: center;
+
+    margin: auto;
+
     overflow: hidden;
+
+}
+
+.slider-content{
+
     position: relative;
+
+    margin: auto;
+
+    width:100%;
+
+    position: relative;
+
 }
 
 .slider {
+
     display: flex;
-    gap: 10px;
+
     transition: transform 0.5s ease-in-out;
+
 }
+
+
 
 .slide {
-    flex: 0 0 100%;
-    max-width: 100%;
+
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    margin: auto;
+
+    justify-content: center;
+
+
+
 }
-
-@media (min-width: 768px) {
-    .slide {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .slide {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .links {
-        display: none;
-    }
-}
-
-
-@media (min-width: 1024px) {
-    .slide {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .slide {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-}
-
    </style>
 </head>
 <body>
