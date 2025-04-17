@@ -1716,6 +1716,37 @@ option{
     right: 10px;
     position: absolute;
 }
+@media(max-width:480px){
+    .lesson-sec .chapter-title-container{
+        font-size: 15px;
+        width: 95%;
+    }
+    .lesson-sec .chapter-title-container .chapter-title div{
+        max-width: 350px;
+        hieght: 100%;
+    }
+}
+@media(max-width:395px){
+    .lesson-sec .chapter-title-container{
+        font-size: 15px; 
+        width: 95%;
+    }
+    .lesson-sec .chapter-title-container .chapter-title div{
+        max-width: 290px;
+        hieght: 100%;
+    }
+}
+@media(max-width:355px){
+    .lesson-sec .chapter-title-container{
+        font-size: 12px;
+        width: 95%;
+    }
+    .lesson-sec .chapter-title-container .chapter-title div{
+        max-width: 250px;
+        hieght: 100%;
+    }
+}
+
 /*===== projects page =====*/
 .project-card {
     backdrop-filter: blur(36.72150421142578px);
