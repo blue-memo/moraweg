@@ -27,6 +27,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <style>
+
 .slider-container {
     width:100%;
     justify-content: center;
@@ -49,6 +50,42 @@
     box-sizing: border-box;
     margin: auto;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .slide {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
 }
    </style>
 </head>
