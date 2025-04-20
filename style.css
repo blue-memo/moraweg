@@ -1621,6 +1621,126 @@ option{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.package{
+    background: linear-gradient(117.54deg, rgba(255, 255, 255, 0.1) -19.85%, rgba(235, 235, 235, 0.0734707) 4.2%, rgba(224, 224, 224, 0.0575009) 13.88%, rgba(212, 212, 212, 0.0422621) 27.98%, rgba(207, 207, 207, 0.0351168) 37.8%, rgba(202, 202, 202, 0.0286863) 44.38%, rgba(200, 200, 200, 0.0252599) 50.54%, rgba(196, 196, 196, 0.02) 60.21%), linear-gradient(180deg, rgba(62, 107, 255, 0.237) 25.32%, rgba(62, 107, 255, 0.571) 100%);
+    width: 90%;
+    position: relative;
+    max-width: 1000px;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    outline: 2px #8389f61a solid;
+    min-height: 400px;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 90px #52a3cf57;
+}
+.package button{
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background: #52C5CF;
+    font-size: 22px;
+}
+.package div center h1{
+    font-family: sans-serif;
+    position: relative;
+    font-size: 130px;
+}
+.package div center h4{
+    background: #FFF;
+    padding: 8px;
+    border-radius: 200px;
+    color: #16133D;
+    width: 120px;
+}
+.package h1 span{
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.package div center h3{
+    font-size: 35px;
+}
+.package div center h3 span{
+    color: #FFF;
+    font-family: sans-serif;
+}
+.package div center h5{
+    color: Yellow;
+}
+.package div h1{
+    text-align: right;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+@media(max-width: 950px){
+    .package{
+        flex-direction: column;
+    }
+    .package div{
+        margin-top: 40px;
+    }
+}
+@media(max-width:450px){
+    .package div center h1{
+        font-size: 90px;
+    }
+}
+@media(max-width:339px){
+    .package div h1{
+        font-size:40px
+    }
+    .package-feature h3{
+        font-size: 17px;
+    }
+}
+.package .package-feature{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    direction: rtl;
+}
+.package-feature h3{
+    font-weight: 100;
+}
+
+
+/* certificate section */
+.certificate{
+    min-height: 400px;
+    border-radius: 50px;
+    width:90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(117.54deg, rgba(255, 255, 255, 0.1) -19.85%, rgba(235, 235, 235, 0.0734707) 4.2%, rgba(224, 224, 224, 0.0575009) 13.88%, rgba(212, 212, 212, 0.0422621) 27.98%, rgba(207, 207, 207, 0.0351168) 37.8%, rgba(202, 202, 202, 0.0286863) 44.38%, rgba(200, 200, 200, 0.0252599) 50.54%, rgba(196, 196, 196, 0.02) 60.21%);
+    margin-top: 50px;
+}
+.certificate h1{
+    font-size: 45px;
+    direction: rtl;
+    margin-top: 30px;
+    padding-right: 30px;
+}
+.certificate img{
+    border: 5px #FFF solid;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
 .guarantee{
     direction: ltr;
     text-align: right;
@@ -1630,6 +1750,7 @@ option{
     width: 90%;
     gap: 50px;
     flex-wrap: wrap;
+    margin: auto;
     margin-top: 50px;
 }
 .guarantee .guarantee-img{
@@ -1687,6 +1808,7 @@ option{
     background: linear-gradient(117.54deg, rgba(255, 255, 255, 0.1) -19.85%, rgba(235, 235, 235, 0.0734707) 4.2%, rgba(224, 224, 224, 0.0575009) 13.88%, rgba(212, 212, 212, 0.0422621) 27.98%, rgba(207, 207, 207, 0.0351168) 37.8%, rgba(202, 202, 202, 0.0286863) 44.38%, rgba(200, 200, 200, 0.0252599) 50.54%, rgba(196, 196, 196, 0.02) 60.21%);
     border: 1px #ffffff0c solid;
     width: 70%;
+    max-width: 1000px;
 }
 .lesson-sec .lesson{
     border: 0;
