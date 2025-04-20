@@ -1761,6 +1761,9 @@ option{
     max-width: 500px;
     animation: infinite 8s ease-in-out guarantee;
 }
+.guarantee .guarantee-img img:hover{
+    animation:none;
+}
 .guarantee .guarantee-img h1{
     position: absolute;
     left: 50%;
